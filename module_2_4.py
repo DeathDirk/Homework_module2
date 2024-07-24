@@ -21,5 +21,10 @@ for i in numbers[1:]:
         if i % 2 == 0 and i % 3 == 0:
             is_prime = False
             break
-
+    if is_prime == True:
+        primes.append(i)
+    else:
+        not_primes.append(i)
+print(primes)
+print(not_primes)
 
