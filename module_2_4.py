@@ -1,14 +1,4 @@
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-# primes = []
-# not_primes = []
-# for i in numbers:
-#     if i % 2 == 0:
-#         primes.append(i)                              задание не доконца прочитал
-#     else:
-#         not_primes.append(i)
-#
-# print(primes)
-# print(not_primes)
+
 # Пункты задачи:
 # Создайте пустые списки primes и not_primes.
 # При помощи цикла for переберите список numbers.
@@ -27,7 +17,8 @@ primes = []
 not_primes = []
 for i in numbers[1:]:
     is_prime = True
-    for i in i:
-        if i % 2 == 0 or i % 3 == 0:
+    for j in range(i):
+        if i % 2 == 0 and i % 3 == 0:
+            is_prime = False
 
 
