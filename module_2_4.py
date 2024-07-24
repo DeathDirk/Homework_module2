@@ -20,5 +20,6 @@ for i in numbers[1:]:
     for j in range(i):
         if i % 2 == 0 and i % 3 == 0:
             is_prime = False
+            break
 
 
