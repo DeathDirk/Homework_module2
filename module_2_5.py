@@ -1,11 +1,10 @@
 def get_matrix(n, m, value):
     matrix = []
     for i in range(n):
-        add = []
+        matrix.append([])
         for j in range(m):
-            # col_ = []
-            add.append(value)
-        matrix.append(add)
+            matrix[-1].append(value)
+
 
     return matrix
 
@@ -17,7 +16,7 @@ print(result1)
 print(result2)
 print(result3)
 
-#Ваша функция get_matrix имеет правильную структуру и логику создания матрицы. 
+# Ваша функция get_matrix имеет правильную структуру и логику создания матрицы. 
 # Однако, требуется небольшая оптимизация: 
 # - вместо создания дополнительной переменной add для каждой строки матрицы, можно просто добавлять пустой список
 # напрямую в matrix (в соответствии с кол-вом строк). Также, важно помнить, что в Python списки передаются по ссылке,
@@ -51,3 +50,5 @@ print(result3)
 #         matrix.pop(k)
 #         return matrix
 # matrix.remove(None)
+# col_ = []
+# add.append(col_)
