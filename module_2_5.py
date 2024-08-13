@@ -2,18 +2,13 @@ def get_matrix(n, m, value):
     matrix = []
     for i in range(n):
         add = []
-        matrix.append(add)
         for j in range(m):
-            col_ = []
-            col_.append(value)
-            matrix.append(col_)
-   # matrix = k for x in matrix if matrix != []
-    # for k in matrix:
-    #     if k == 0:
-    #         matrix.pop(k)
-    #         return matrix
-    # matrix.remove(None)
+            # col_ = []
+            add.append(value)
+        matrix.append(add)
+
     return matrix
+
 
 result1 = get_matrix(2, 2, 10)
 result2 = get_matrix(3, 5, 42)
@@ -34,20 +29,25 @@ print(result3)
 # Прошу доработать и направить решение повторно.
 
 
+# def get_matrix(n, m, value):
+#     matrix = []
+#     for i in range(n):
+#         add = []
+#         matrix.append(add)
+#         for j in range(m):
+#             add.append(value)
+#     return matrix
+#
+# result1 = get_matrix(2, 2, 10)
+# result2 = get_matrix(3, 5, 42)
+# result3 = get_matrix(4, 2, 13)
+# print(result1)
+# print(result2)
+# print(result3)
 
-
-def get_matrix(n, m, value):
-    matrix = []
-    for i in range(n):
-        add = []
-        matrix.append(add)
-        for j in range(m):
-            add.append(value)
-    return matrix
-
-result1 = get_matrix(2, 2, 10)
-result2 = get_matrix(3, 5, 42)
-result3 = get_matrix(4, 2, 13)
-print(result1)
-print(result2)
-print(result3)
+# matrix = k for x in matrix if matrix != []
+# for k in matrix:
+#     if k == 0:
+#         matrix.pop(k)
+#         return matrix
+# matrix.remove(None)
